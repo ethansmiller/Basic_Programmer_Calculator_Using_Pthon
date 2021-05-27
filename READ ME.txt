@@ -1,0 +1,50 @@
+*BASIC FUNCTIONALITY OF PROGRAMMER CALCULATOR*
+
+This program allows for the use of a basic programmer calculator. It includes basic calculator functionality on top of bitwise operations (AND, OR, NOT, XOR, <<, >>), as well as conversion between hexadecimal, decimal, octal, and binary. 
+
+
+*USER GUIDE*
+
+below is a short list of the buttons available on the calculator and what they do.
+
++/- = 	sign change. switches sign of the number typed.
+
+. = 	decimal point. allows for the use of decimals in basic calculation
+
+( = 	open parenthesis
+
+) = 	close parenthesis
+
+sqrt = 	square root. finds the square root of the number typed
+
+x^2 = 	sqaure. squares the number typed
+
+HEX = 	allows for the conversion of any octal/decimal/binary number to 		hexadecimal
+
+DEC = 	allows for the conversion of any octal/hexadecimal/binary number to 		decimal
+
+OCT = 	allows for the conversion of any hexadecimal/decimal/binary number to 		octal
+
+BIN = 	allows for the conversion of any hexadecimal/decimal/octal number to 		binary
+
+AND = 	allows for the bitwise manipulation of two numbers using the AND 		bitwise operation. (ex: x&y)
+
+OR = 	allows for the bitwise manipulation of two numbers using the OR 		bitwise operation. (ex: x|y)
+
+NOT =	allows for the bitwise manipulation of the typed number using the NOT 		bitwise operation. (ex: ~x note: the NOT operator must be pressed 		BEFORE the number is pressed)
+
+XOR = 	allows for the bitwise manipulation of two numbers using the XOR 		bitwise operation. (ex: x^y)
+
+<< = 	Bit shift left. allows for the shifting of a given number of bits to 	the left using the << bitwise operator. (ex: x<<y , where x is the 	number you want to shift, and y is the number of bits you want to 	shift in that direction)
+
+>> = 	Bit shift right. allows for the shifting of a given number of bits to 	the right using the >> bitwise operator. (ex: x>>y , where x is the 	number you want to shift, and y is the number of bits you want to 	shift in that direction)
+
+*KNOWN BUGS*
+
+below is a short list of bugs known by developer.
+
+ - Numbers can freely be converted between hex/dec/oct/bin, but must ALWAYS be    converted back to decimal to perform further mathematical and bitwise    operations. Attempting to perform further calculations outside of decimal    will produce 0 as the result.
+
+ - Attempting to perform a conversion from a negative decimal number to    hex/oct/bin will NOT result in a twos compliment form, and so will simply    produce a hex/oct/bin number with a negative sign in front of it.
+
+ - Attempting to perform a hex/oct/bin conversion of a non-integer decimal    value will result in no response from the calculator, unless decimal    conversion is selected and the number will then be rounded. 
